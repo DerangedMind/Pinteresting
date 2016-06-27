@@ -1,2 +1,0 @@
-# Pinteresting
-Playing with Rails
