@@ -4,6 +4,8 @@
     <p>This is so pinteresting</p>
     
     <% if user_signed_in? %>
+        <%= link_to "Add Pin", new_pin_path, class: 'btn btn-default' %>
+        <%= link_to "Pins", pins_path, class: 'btn btn-default' %>
         <%= link_to "Edit Profile", edit_user_registration_path, class: 'btn btn-default' %>
         <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-primary'  %>
     <% else %>
